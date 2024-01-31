@@ -3,10 +3,6 @@ languageCode = 'en-us'
 title = 'Burnt Bag Studios - A couple of cheeky Game Devs'
 copyright = 'Burnt Bag Studios'
 
-[markup.goldmark.parser.attribute]
-block = true
-title = true
-
 canonifyURLs = true
 
 #Exposed parameters
