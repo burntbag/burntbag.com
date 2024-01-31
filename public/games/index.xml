@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GAMES on Burnt Bag Studios - A couple of cheeky Game Devs</title>
+    <link>https://burntbag.com/games/</link>
+    <description>Recent content in GAMES on Burnt Bag Studios - A couple of cheeky Game Devs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Burnt Bag Studios</copyright><atom:link href="https://burntbag.com/games/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://burntbag.com/games/emergency-water-landing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://burntbag.com/games/emergency-water-landing/</guid>
+      <description>Emergency Water Landing is a local multiplayer party game, where a sinking aircraft is the least of your worries. Control high powered rescue rafts, while competing against opponents to save passengers from imminent danger, launching them to their presumable safety.</description>
+    </item>
+    
+  </channel>
+</rss>

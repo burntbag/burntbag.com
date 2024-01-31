@@ -1,0 +1,39 @@
+.assets-items {
+    padding-top: 20px;
+    color: $textColor;
+    max-width: 50rem;
+    min-width: $size-width-screen-mobile;
+}
+
+.assets-item {
+    object-fit: fill;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.assets-item p {
+    margin-top: 0.5rem;
+    font-size: 18px;
+}
+
+.assets-title {
+    padding-top: 0.5rem;
+}
+
+.assets-item img {
+    width: 100%;
+    max-width: 50rem;
+    min-width: $size-width-screen-mobile;
+    border-radius: 0.75rem;
+    box-shadow: 0px 0px 8px 1px #A1A1A1;
+}
+
+.external-logo {
+    fill: $externalLogoColor;
+    padding-right: 1rem;
+    text-decoration: none;
+
+    svg {
+        margin-top: 1rem;
+    }
+}

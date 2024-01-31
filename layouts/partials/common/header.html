@@ -1,0 +1,43 @@
+<header class="header">
+    <script src=
+        "https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+    </script>
+
+    <div class="header-container">
+        {{ $image := resources.Get "images/Main-Site-Logo.png" }}
+        <img class="header-logo" src="{{ $image.RelPermalink }}" alt="asset boat logo">
+        {{/*  <nav class="header-nav" id="nav">
+            <a id="home" href="/" class="header-nav-item">ASSETS</a>
+            <a id="support" href="/support" class="header-nav-item">SUPPORT / CONTACT</a>
+            <a id="privacy" href="/privacy" class="header-nav-item">PRIVACY POLICY</a>
+        </nav>  */}}
+        {{/*  Nav Menu  */}}
+        {{- $currentPage := . }}
+        <ul id="menu">
+            {{- range .Site.Menus.main }}
+            {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
+            {{- $page_url:= $currentPage.Permalink | absLangURL }}
+            {{- $is_search := eq ($.Site.GetPage .KeyName).Layout `search` }}
+            <li>
+                <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
+                {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}>
+                    <span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}>
+                        {{- .Pre }}
+                        {{- .Name -}}
+                        {{ .Post -}}
+                    </span>
+                </a>
+            </li>
+            {{- end }}
+        </ul>
+
+    <script>
+        $(document).ready(function(){
+            $('#nav a').addClass('active');
+            $('#nav a').on("click", function() {
+                $($(this)).toggleClass('active');
+            })
+        });        
+    </script>
+    </div>
+</header>

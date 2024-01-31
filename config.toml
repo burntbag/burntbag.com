@@ -1,0 +1,49 @@
+baseURL = "https://burntbag.com/"
+languageCode = 'en-us'
+title = 'Burnt Bag Studios - A couple of cheeky Game Devs'
+copyright = 'Burnt Bag Studios'
+
+[markup.goldmark.parser.attribute]
+block = true
+title = true
+
+#Exposed parameters
+[params]
+    titleColor = "#000"
+
+#PAGES TO SHOW IN NAVIGATION MENU
+[[menu.main]]
+    url = "/"
+    name = "GAMES"
+    weight = 1
+
+[[menu.main]]
+    url = "/about/"
+    name = "ABOUT"
+    weight = 2
+
+[[menu.main]]
+    url = "/privacy/"
+    name = "PRIVACY POLICY"
+    weight = 3
+
+[[menu.main]]
+    url = "/contact/"
+    name = "CONTACT"
+    weight = 4
+
+# ICONS
+[[menu.icon]]
+    url = "https://www.facebook.com/burntbagstudios/"
+    name = "fab fa-facebook"
+    weight = 1
+
+[[menu.icon]]
+    url = "https://twitter.com/BurntBagStudios"
+    name = "fab fa-twitter"
+    weight = 2
+
+[[menu.icon]]
+    url = "https://www.youtube.com/@burntbagstudios3420/videos"
+    name = "fab fa-youtube"
+    weight = 3

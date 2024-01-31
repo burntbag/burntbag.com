@@ -1,0 +1,19 @@
+<section>
+    <div class="container">
+        <div class="title">GAMES</div>
+        <div class="assets-items">
+        {{ range (where .Site.Pages "Section" "games") }}
+            {{ range.Pages }} 
+            <div class="assets-item">
+                {{- if .Content }}
+                    {{ .Content }}
+                    <div class="assets-title">
+                    {{ .Title }}
+                    </div>
+                {{- end }}
+            </div>
+            {{ end }}
+        {{ end }}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,28 @@
+{{ define "main" }}
+    <section>
+        <div class="container">
+            <h1 class="title">{{ .Title }}</h1>
+            
+            <div class="page-content">
+                {{ .Description }}
+                
+                {{ .Content }}
+
+                <div class="page-contents">
+
+                    {{ range (where .Site.Pages "Section" "about") }}
+                    {{ range.Pages }} 
+                    <div class="page-item">
+                        {{- if .Content }}
+                        <div class="profile-images">{{ .Content }}</div>
+                        <h3>{{ .Title }}</h3>
+                        {{- end }}
+                    </div>
+                    {{ end }}
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </section>
+
+{{ end }}
