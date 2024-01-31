@@ -7,6 +7,8 @@ copyright = 'Burnt Bag Studios'
 block = true
 title = true
 
+canonifyURLs = true
+
 #Exposed parameters
 [params]
     titleColor = "#000"
