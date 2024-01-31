@@ -3,8 +3,6 @@ languageCode = 'en-us'
 title = 'Burnt Bag Studios - A couple of cheeky Game Devs'
 copyright = 'Burnt Bag Studios'
 
-canonifyURLs = true
-
 #Exposed parameters
 [params]
     titleColor = "#000"
