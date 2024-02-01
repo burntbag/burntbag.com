@@ -2,7 +2,6 @@
     padding-top: 20px;
     color: $textColor;
     max-width: 50rem;
-    min-width: $size-width-screen-mobile;
 }
 
 .assets-item {
@@ -23,7 +22,6 @@
 .assets-item img {
     width: 100%;
     max-width: 50rem;
-    min-width: $size-width-screen-mobile;
     border-radius: 0.75rem;
     box-shadow: 0px 0px 8px 1px #A1A1A1;
 }
